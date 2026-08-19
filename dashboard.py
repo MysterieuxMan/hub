@@ -214,4 +214,7 @@ app.layout = serve_layout
 app.title = "Securade.ai - HUB Dashboard"
 
 if __name__ == "__main__":
-    app.run_server(debug=True, host='0.0.0.0', port=8888)
+    if hasattr(app, "run"):
+        app.run(debug=True, host='0.0.0.0', port=8888)
+    else:
+        app.run_server(debug=True, host='0.0.0.0', port=8888)

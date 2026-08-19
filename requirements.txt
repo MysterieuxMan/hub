@@ -112,7 +112,7 @@ yolov7face @ git+https://github.com/securade/yolov7face
 openvino-dev; platform_machine == 'x86_64'
 openvino-telemetry; platform_machine == 'x86_64'
 nncf; platform_machine == 'x86_64'
-pytapo
+pytapo==3.3.30
 python-telegram-bot
 schedule
 dash
